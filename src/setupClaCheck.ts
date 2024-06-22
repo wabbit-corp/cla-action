@@ -70,7 +70,7 @@ async function getCLAFileContentandSHA(
       throw new Error(
         `Could not retrieve repository contents. Status: ${
           error.status || 'unknown'
-        }`
+        } ${typeof error.status}`
       )
     }
   }
